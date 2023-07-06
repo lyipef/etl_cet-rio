@@ -20,6 +20,8 @@ Execute o script usando o seguinte comando:
 
 O script começará a buscar dados na API do CET-RIO e os armazenará no arquivo eventos_rio.csv. Ele também atualizará periodicamente os dados a cada 20 minutos, até que você interrompa o programa, abaixo um fluxograma seguindo a lógica de execução do código.
 
+<img src="https://lucid.app/lucidchart/91abc393-7e0b-46df-9c00-dc4fa4304f9a/edit?viewport_loc=203%2C-49%2C3721%2C1595%2C0_0&invitationId=inv_7635ce4f-86b6-4486-9389-a2c614181de2" width = "60%" height="40%">
+
 # Registro de Eventos
 
 O script registra quaisquer erros encontrados durante a execução no arquivo error.log. Você pode verificar este arquivo para solucionar quaisquer problemas.
