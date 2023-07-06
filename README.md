@@ -18,6 +18,8 @@ Execute o script usando o seguinte comando:
 
 ```python dados_rio.py```
 
+##
+
 O script começará a buscar dados na API do CET-RIO e os armazenará no arquivo eventos_rio.csv. Ele também atualizará periodicamente os dados a cada 20 minutos, até que você interrompa o programa, abaixo um fluxograma seguindo a lógica de execução do código.
 
 <img src="https://github.com/lyipef/etl_cet-rio/assets/120730541/cfe008cb-4455-47b3-89b0-d4559587180c" width = "60%" height="40%">
@@ -35,7 +37,6 @@ O script registra quaisquer erros encontrados durante a execução no arquivo er
 # Contato
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato comigo.
-##
 
 <div>
       <a href="https://www.linkedin.com/in/filipe-jos%C3%A9-9652891b1/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
