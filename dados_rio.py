@@ -67,7 +67,8 @@ def eventos_CETRIO():
         print("\n   - Sem novos eventos para adicionar! \n")
     else:
         df_csv = pd.concat([df, df_final], ignore_index=True).drop_duplicates(subset=['id'], keep='last')
-        df_csv.to_csv('eventos_rio.csv', index=False)
+        df_csv = df_csv.dropna()
+        df_csv.to_csv('eventos_rio.csv', index=False, encoding='latin1')
 
         print("\n   - Dados salvos com sucesso!")
 
