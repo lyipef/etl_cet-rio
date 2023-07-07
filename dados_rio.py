@@ -66,8 +66,10 @@ def eventos_CETRIO():
     else:
         df_csv = pd.concat([df, df_final], ignore_index=True).drop_duplicates(subset=['id'], keep='last')
         df_csv = df_csv.dropna()
+
+        print(f"   -  Adicionado {len(df_csv) - len(df_final)} eventos ao arquivo eventos_rio.csv \n")
         df_csv.to_csv('eventos_rio.csv', index=False, encoding='latin1')
-        print(f"   -  Adicionado {len(df) - len(df_final)} eventos ao arquivo eventos_rio.csv \n")
+        
 
         print("\n   - Dados salvos com sucesso!")
 
