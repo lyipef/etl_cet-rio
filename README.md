@@ -9,6 +9,7 @@ Para executar este script, você precisa ter o Python 3 instalado em seu sistema
 ```pip install requests ```
 ```pip install pandas ```
 ```pip install schedule ```
+```pip install logging ```
 
 # Uso
 Clone este repositório ou baixe o arquivo dados_rio.bat/dados_rio.py
