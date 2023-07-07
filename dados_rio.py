@@ -57,7 +57,7 @@ def eventos_CETRIO():
     df_final["quantidade_ocorrencia"] = df_final["status_ocorrencia"].map(contagem)
 
     try:
-        df = pd.read_csv('eventos_rio.csv')
+        df = pd.read_csv('eventos_rio.csv', encoding='latin1')
     except FileNotFoundError:
         df = pd.DataFrame()
 
