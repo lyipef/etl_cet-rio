@@ -61,7 +61,7 @@ def eventos_CETRIO():
     except FileNotFoundError:
         df = pd.DataFrame()
 
-    print(f"   -  Adicionado {len(df_final) - len(df)} eventos ao arquivo eventos_rio.csv \n")
+    print(f"   -  Adicionado {len(df) - len(df_final)} eventos ao arquivo eventos_rio.csv \n")
 
     if len(df) == len(df_final):
         print("\n   - Sem novos eventos para adicionar! \n")
