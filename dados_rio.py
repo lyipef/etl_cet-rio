@@ -61,14 +61,13 @@ def eventos_CETRIO():
     except FileNotFoundError:
         df = pd.DataFrame()
 
-    print(f"   -  Adicionado {len(df) - len(df_final)} eventos ao arquivo eventos_rio.csv \n")
-
     if len(df) == len(df_final):
         print("\n   - Sem novos eventos para adicionar! \n")
     else:
         df_csv = pd.concat([df, df_final], ignore_index=True).drop_duplicates(subset=['id'], keep='last')
         df_csv = df_csv.dropna()
         df_csv.to_csv('eventos_rio.csv', index=False, encoding='latin1')
+        print(f"   -  Adicionado {len(df) - len(df_final)} eventos ao arquivo eventos_rio.csv \n")
 
         print("\n   - Dados salvos com sucesso!")
 
